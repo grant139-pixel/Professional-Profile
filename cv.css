@@ -1,0 +1,158 @@
+/* Page background and default text */
+body {
+    margin: 0;
+    padding: 25px;
+    background: #edf1f5;
+    color: #26364a;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Sidebar and main content sit next to each other */
+.resume {
+    display: flex;
+    max-width: 950px;
+    margin: 0 auto;
+    background: white;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    width: 280px;
+    padding: 30px;
+    background: #1b2d42;
+    color: white;
+}
+
+.back-link {
+    color: #cbd8e5;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 115px;
+    height: 115px;
+    margin-top: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar h1 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.eyebrow,
+.section-kicker {
+    color: #809bb5;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.tagline,
+.sidebar-note {
+    color: #cbd8e5;
+}
+
+.sidebar-section {
+    margin-top: 30px;
+}
+
+.sidebar-section h2 {
+    font-size: 13px;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.content-section {
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    margin: 5px 0 10px;
+    color: #1b2d42;
+    font-family: Georgia, serif;
+}
+
+.content p {
+    color: #58697b;
+}
+
+.project-card,
+.references {
+    padding: 18px;
+    border: 1px solid #dce3e9;
+    background: #f8fafb;
+}
+
+.project-topline,
+.project-footer,
+.resume-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.project-topline h3,
+.timeline-item h3 {
+    margin: 0;
+}
+
+.content a {
+    color: #304f70;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font: inherit;
+}
+
+.contact-section button {
+    align-self: flex-start;
+    padding: 10px 15px;
+    border: 0;
+    background: #1b2d42;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background: #385875;
+}
+
+.resume-footer {
+    padding-top: 15px;
+    border-top: 1px solid #dce3e9;
+    color: #738194;
+    font-size: 12px;
+}
+
+/* Stack the columns on small screens */
+@media (max-width: 700px) {
+    body {
+        padding: 12px;
+    }
+    .resume {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .content {
+        padding: 25px;
+    }
+}

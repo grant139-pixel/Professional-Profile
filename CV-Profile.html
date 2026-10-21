@@ -3,12 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grant Samsons CV</title>
+    <title>Grant Samson | CV</title>
+    <link rel="stylesheet" href="cv.css">
 </head>
 <body>
-    <table>
-        
-    </table>
-    
+    <main class="resume">
+        <!-- Name, photo and skills -->
+        <aside class="sidebar">
+            <a class="back-link" href="index.html">Back to profile</a>
+            <img class="portrait" src="Grant_Samson.jpeg" alt="Portrait of Grant Samson">
+            <p class="eyebrow">WEB DEVELOPER</p>
+            <h1>Grant<br>Samson</h1>
+            <p class="tagline">Building thoughtful, user-friendly digital experiences.</p>
+
+            <section class="sidebar-section">
+                <h2>SKILLS</h2>
+                <ul class="skill-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>Javascript</li>
+                </ul>
+            </section>
+            <p class="sidebar-note">Curious by nature. Always learning.</p>
+        </aside>
+
+        <!-- CV information -->
+        <div class="content">
+            <section class="content-section">
+                <p class="section-kicker">A LITTLE ABOUT ME</p>
+                <h2>Profile</h2>
+                <p>
+                    I’m passionate about web development and creating user-friendly
+                    digital experiences. I enjoy learning new technologies and
+                    building projects that make a positive impact.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <p class="section-kicker">WHAT I’VE BEEN BUILDING</p>
+                <h2>Featured project</h2>
+                <div class="project-card">
+                    <div class="project-topline">
+                        <h3>Professional Profile</h3>
+                    </div>
+                    <p>
+                        A personal profile and CV built with HTML and CSS and Javascript. The page
+                        includes an introduction, project details and a responsive layout.
+                    </p>
+                    <div class="project-footer">
+                        <span>HTML &amp; CSS &amp; Javascript</span>
+                        <a href="https://github.com/grant139-pixel"
+                           target="_blank" rel="noopener noreferrer">View project</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <p class="section-kicker">HOW I WORK</p>
+                <h2>Development journey</h2>
+                <div class="timeline-item">
+                    <h3>Independent web development</h3>
+                    <p>Personal projects and continuous learning</p>
+                    <p>
+                        I build practical skills by making projects, learning new
+                        technologies and focusing on clear user experiences.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section references">
+                <p class="section-kicker">PROFESSIONAL REFERENCES</p>
+                <h2>References</h2>
+                <p>References are available upon request.</p>
+            </section>
+
+            <!-- This form opens a draft in the visitor's email app -->
+            <section class="content-section contact-section">
+                <p class="section-kicker">GET IN TOUCH</p>
+                <h2>Send me a message</h2>
+                <p>Your email app will open with a message ready to send.</p>
+                <form id="contact-form">
+                    <label for="sender-name">Your name</label>
+                    <input id="sender-name" type="text" required>
+
+                    <label for="sender-email">Your email</label>
+                    <input id="sender-email" type="email" required>
+
+                    <label for="sender-message">Message</label>
+                    <textarea id="sender-message" rows="4" required></textarea>
+
+                    <button type="submit">Open email draft</button>
+                    <p id="contact-status" class="form-status"></p>
+                </form>
+            </section>
+
+            <footer class="resume-footer">
+                <span>GRANT SAMSON</span>
+                <span>CV | WEB DEVELOPMENT</span>
+            </footer>
+        </div>
+    </main>
+    <script src="contact.js"></script>
 </body>
 </html>
